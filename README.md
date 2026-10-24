@@ -67,6 +67,23 @@ scripts/          Transcription (local and OpenAI), ffmpeg helper, corrections
 config/           marca.default.json (defaults); your own settings are created here
 ```
 
+## Modify it with Claude
+
+The repo includes a [`CLAUDE.md`](CLAUDE.md) that explains the project to Claude, so it knows where everything is and how to test changes.
+
+1. Install [Claude Code](https://claude.com/claude-code) (desktop app or terminal).
+2. Clone and install the project (see *Getting started*).
+3. Open Claude Code in the `reels-studio` folder. In the terminal: `cd reels-studio` then `claude`.
+4. First message: *"Read CLAUDE.md and set up the project"*. Claude installs the official Remotion skills (`npx skills add remotion-dev/skills`), which teach it how to write good Remotion animations and subtitles.
+5. Ask for what you want in plain words, for example:
+   - *"Add a subtitle style where each word bounces in"*
+   - *"Add a 2-second intro with the logo before the video"*
+   - *"Translate the panel to English"*
+   - *"Let me trim the start and end of the video in the editor"*
+6. Check the result with `npm start` (the panel) or `npm run studio` (the template in Remotion Studio). Claude is told to type-check and render a test frame before saying it is done.
+
+Tips: ask for one change at a time, describe what you see on screen ("the subtitles overlap the logo"), and attach a screenshot when something looks wrong.
+
 ## Ideas to contribute
 
 Templates with intros and price cards, trimming and joining clips, more subtitle animations, emoji/keyword highlighting, translations of the UI (currently in Spanish), batch export, background music.
@@ -98,6 +115,23 @@ Se abre http://localhost:4320. La primera vez aparece una pantalla para configur
 - **Con OpenAI**: pago por uso, funciona en cualquier PC. Pegás tu propia clave de API.
 
 Todo se guarda solo en tu computadora (`config/`, `public/reels/`, `out/`) y nada de eso se sube a git.
+
+### Modificarlo con Claude
+
+El repo trae un [`CLAUDE.md`](CLAUDE.md) que le explica el proyecto a Claude: dónde está cada cosa y cómo probar los cambios.
+
+1. Instalá [Claude Code](https://claude.com/claude-code) (app de escritorio o terminal).
+2. Cloná e instalá el proyecto (ver *Cómo empezar*).
+3. Abrí Claude Code en la carpeta `reels-studio`. Desde la terminal: `cd reels-studio` y después `claude`.
+4. Primer mensaje: *"Leé CLAUDE.md y prepará el proyecto"*. Claude instala las skills oficiales de Remotion (`npx skills add remotion-dev/skills`), que le enseñan a hacer buenas animaciones y subtítulos.
+5. Pedile lo que quieras con tus palabras, por ejemplo:
+   - *"Agregá un estilo de subtítulos donde cada palabra entre rebotando"*
+   - *"Sumá una intro de 2 segundos con el logo antes del video"*
+   - *"Traducí el panel al inglés"*
+   - *"Quiero poder recortar el principio y el final del video en el editor"*
+6. Probá el resultado con `npm start` (el panel) o `npm run studio` (la plantilla en Remotion Studio). Claude tiene indicado verificar tipos y renderizar un cuadro de prueba antes de dar algo por terminado.
+
+Consejos: pedí un cambio por vez, describí lo que ves en pantalla ("los subtítulos tapan el logo") y adjuntá una captura cuando algo se vea mal.
 
 ### Licencia
 

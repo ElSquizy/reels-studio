@@ -12,3 +12,8 @@ public/reels/*
 public/marca/*
 !public/marca/.gitkeep
 panel/previa.js
+
+# Agent skills installed locally with `npx skills add remotion-dev/skills`
+.agents/
+.claude/skills/
+skills-lock.json
