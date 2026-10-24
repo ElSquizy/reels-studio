@@ -26,7 +26,7 @@ Runs on your computer as a small web app. Built with [Remotion](https://www.remo
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-user>/reels-studio.git
+git clone https://github.com/ElSquizy/reels-studio.git
 cd reels-studio
 npm install
 npm start
@@ -86,7 +86,7 @@ Editá videos verticales (Reels, TikTok, Shorts) con **subtítulos automáticos 
 ### Cómo empezar
 
 ```bash
-git clone https://github.com/<tu-usuario>/reels-studio.git
+git clone https://github.com/ElSquizy/reels-studio.git
 cd reels-studio
 npm install
 npm start
