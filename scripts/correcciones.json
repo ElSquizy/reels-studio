@@ -1,0 +1,4 @@
+{
+  "_ayuda": "Palabras que la transcripción escribe mal → cómo deben quedar. Se comparan sin mayúsculas ni signos. Ej: \"mi marka\": \"Mi Marca\"",
+  "_help": "Words the transcription gets wrong → how they should read. Compared ignoring case and punctuation."
+}

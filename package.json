@@ -1,0 +1,34 @@
+{
+  "name": "reels-studio",
+  "version": "0.1.0",
+  "description": "Edit Instagram/TikTok-style reels with automatic word-by-word subtitles in your own brand style. Built with Remotion.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node panel/server.mjs",
+    "studio": "remotion studio",
+    "transcribe": "node scripts/transcribir.mjs",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.2.0",
+    "@mediabunny/server": "1.62.0",
+    "@remotion/captions": "4.0.538",
+    "@remotion/cli": "4.0.538",
+    "@remotion/google-fonts": "4.0.538",
+    "@remotion/player": "4.0.538",
+    "@remotion/whisper-webgpu": "4.0.538",
+    "mediabunny": "1.62.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.538",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "esbuild": "0.28.1",
+    "typescript": "5.9.3"
+  }
+}

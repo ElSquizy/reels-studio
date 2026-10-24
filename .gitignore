@@ -1,0 +1,14 @@
+node_modules
+out
+.DS_Store
+
+# Your private settings and API keys (created by the setup screen)
+config/secretos.json
+config/marca.json
+
+# Your media: videos, subtitles and brand files stay on your computer
+public/reels/*
+!public/reels/.gitkeep
+public/marca/*
+!public/marca/.gitkeep
+panel/previa.js
